@@ -6,15 +6,10 @@ const cors = require('cors');
 const loginRouter = require('../router/loginRouter');
 const registerRouter = require('../router/registerRouter');
 const productsRouter = require('../router/productRouter');
-const corsOptions = {
-  origin: 'https://lexart-test-dun.vercel.app/',
-  methods: ['GET', 'POST', 'DELETE', 'UPDATE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-};
 
 const app = express();
 app.use(express.json());
-app.use(cors(corsOptions));
+app.use(cors());
 
 
 const pool = new createPool({
