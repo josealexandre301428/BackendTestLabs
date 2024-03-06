@@ -1,0 +1,26 @@
+{
+  "functions": {
+    "api": {
+      "source": "/src",
+      "output": "/build"
+    }
+  },
+  "routes": [
+    { "src": "/api/login", "dest": "/build/loginRouter.js" },
+    { "src": "/api/register", "dest": "/build/registerRouter.js" },
+    { "src": "/api/products", "dest": "/build/productRouter.js" }
+  ],
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/build/$1"
+    }
+  ],
+  "builds": [
+    {
+      "src": ".vercel/reset_script.js",
+      "use": "@vercel/node"
+    }
+  ]
+}
