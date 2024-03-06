@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api": {
-      "runtime": "@vercel/node"
-    }
-  },
   "routes": [
     { "src": "/api/login", "dest": "/src/loginRouter.js" },
     { "src": "/api/register", "dest": "/src/registerRouter.js" },
