@@ -1,12 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/api/login", "destination": "/src/loginRouter.js" },
-    { "source": "/api/register", "destination": "/src/registerRouter.js" },
-    { "source": "/api/products", "destination": "/src/productRouter.js" },
-    {
-      "source": "/(.*)",
-      "destination": "/src/$1"
-    }
-  ],
-  "cleanUrls": true
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
