@@ -13,6 +13,11 @@ app.use(cors());
 
 
 const pool = new createPool({
+  port: process.env.POSTGRES_PORT,
+  database: process.env.POSTGRES_DATABASE,
+  host: process.env.POSTGRES_HOST,
+  password: process.env.POSTGRES_PASSWORD,
+  user: process.env.POSTGRES_USER,
   connectionString: process.env.POSTGRES_URL,
 });
 

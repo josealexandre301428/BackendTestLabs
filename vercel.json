@@ -8,11 +8,5 @@
       "destination": "/src/$1"
     }
   ],
-  "cleanUrls": true,
-  "builds": [
-    {
-      "src": ".vercel/reset_script.js",
-      "use": "@vercel/node"
-    }
-  ]
+  "cleanUrls": true
 }
