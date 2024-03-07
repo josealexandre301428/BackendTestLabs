@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import {sql} from "@vercel/postgres"
 import NavBar from "./components/NavBar";
 import api from "../../services/api";
 import makeProducts from "../../services/handlerProduct";

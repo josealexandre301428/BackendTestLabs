@@ -4,7 +4,7 @@
   "description": "Backend para aplicação Teste Tecnico Lexart Labs",
   "main": "./src/api/server.js",
   "scripts": {
-    "start": "node .",
+    "start": "nodemon .",
     "dev": "nodemon src/index.js",
     "db:reset": "npx sequelize-cli db:migrate:undo:all && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -22,6 +22,7 @@ export default function LoginForm() {
       setUser(login);
       localStorage.setItem('user', JSON.stringify(login.data));
     } catch (error) {
+      console.log(error.message);
       setError(true);
     }
   };
